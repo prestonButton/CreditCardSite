@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Credit Card Site</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/chip.svg" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="vh-100">
+    <div class="container h-100 text-white">
+      <div class="row d-flex align-items-center h-100">
+        <div class="col-md-6">
+          <div class="fade">
+            <h1 class="mb-4 opacity-90">Exclusive Offer</h1>
+            <h5 class="mb-4 opacity-80">Lorem Ipsum dolor sit amet</h5>
+            <p class="mb-4 opacity-70">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates, quod, quia, voluptate quae voluptatem quidem quibusdam
+              voluptatum quos quas quia voluptate quae voluptatem quidem
+              quibusdam voluptatum quos quas
+            </p>
+            <a
+              class="btn btn-white btn-lg btn-rounded me-3 opacity-80"
+              href="#"
+              role="button"
+              data-ripple-color="hsl(218, 41%, 45%)"
+              >Buy Now</a
+            >
+            <a
+              class="btn btn-outline-white btn-lg btn-rounded me-3 opacity-80"
+              href="#"
+              role="button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-1 position-relative">
+          <div
+            class="position-absolute shadow-5-strong fade fade-delay-small"
+            id="shape-1"
+          ></div>
+          <div
+            class="position-absolute shadow-5-strong fade fade-delay-medium"
+            id="shape-2"
+          ></div>
+          <div
+            class="card shadow-6 rounded-6 fade fade-delay-large"
+            id="card-custom"
+          >
+            <div class="card-body p-5 opacity-90 ls-widest">
+              <h2>
+                <strong> Platinum </strong>
+                <span class="fw-light">card</span>
+              </h2>
+
+              <div
+                class="card-footer border-0 px-5 opacity-90 ls-widest fw-light"
+              >
+                <img
+                  src="./img/chip.svg"
+                  alt="chip"
+                  class="my-chip mb-5 position-absolute"
+                  width="50px;"
+                />
+                <h5 class="mb-5 my-card-num position-absolute">
+                  1234 5678 9012 3456
+                </h5>
+                <p class="mb-2 position-absolute my-name">John Doe</p>
+                <p class="mb-5 position-absolute my-exp-date">12/24</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#card-custom"), {
+        startX: 45,
+        startY: 45,
+        max: 25,
+        speed: 400,
+        reset: false,
+      });
+    </script>
+  </body>
+</html>
